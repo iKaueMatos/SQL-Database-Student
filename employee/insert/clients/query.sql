@@ -5,7 +5,6 @@ VALUES
 ('19290992743','Fernando Cavalcante','R. Dois de Fevereiro','Água Santa','Rio de Janeiro','RJ','22000000','20000212',18,'M',100000,20000,1),
 ('2600586709','César Teixeira','Rua Conde de Bonfim','Tijuca','Rio de Janeiro','RJ','22020001','20000312',18,'M',120000,22000,0)
 
-
 INSERT INTO clients
 (cpf, name, address, neighborhood, city, state, cep, date_of_birth, age, sex, limit_credit, purchase_volume, first_purchase)
 VALUES 
@@ -37,9 +36,14 @@ VALUES
 ('46823791082', 'Pedro Ribeiro', 'Rua Padre Antônio Vieira', 'Campo Grande', 'Recife', 'PE', '52041040', '19950105', 27, 'M', 110000, 13000, 0),
 ('82369154732', 'Aline Fernandes', 'Av. Juscelino Kubitschek', 'Vila Nova Conceição', 'São Paulo', 'SP', '04543001', '20000525', 21, 'F', 90000, 11000, 1),
 ('12546782914', 'Gustavo Oliveira', 'Av. Atlântica', 'Copacabana', 'Rio de Janeiro', 'RJ', '22070000', '20010918', 15, 'M', 80000, 10000, 0),
-
-
-
+('46823791082', 'Pedro Ribeiro', 'Rua Padre Antônio Vieira', 'Campo Grande', 'Recife', 'PE', '52041040', '19950105', 27, 'M', 110000, 13000, 0),
+('82369154732', 'Aline Fernandes', 'Av. Juscelino Kubitschek', 'Vila Nova Conceição', 'São Paulo', 'SP', '04543001', '20000525', 21, 'F', 90000, 11000, 1),
+('12546782914', 'Gustavo Oliveira', 'Av. Atlântica', 'Copacabana', 'Rio de Janeiro', 'RJ', '22070000', '20010918', 15, 'M', 80000, 10000, 0),
+('46823791082', 'Pedro Ribeiro', 'Rua Padre Antônio Vieira', 'Campo Grande', 'Recife', 'PE', '52041040', '19950105', 27, 'M', 110000, 13000, 0),
+('82369154732', 'Aline Fernandes', 'Av. Juscelino Kubitschek', 'Vila Nova Conceição', 'São Paulo', 'SP', '04543001', '20000525', 21, 'F', 90000, 11000, 1),
+('12546782914', 'Gustavo Oliveira', 'Av. Atlântica', 'Copacabana', 'Rio de Janeiro', 'RJ', '22070000', '20010918', 15, 'M', 80000, 10000, 0),
+('46823791082', 'Pedro Ribeiro', 'Rua Padre Antônio Vieira', 'Campo Grande', 'Recife', 'PE', '52041040', '19950105', 27, 'M', 110000, 13000, 0),
+('82369154732', 'Aline Fernandes', 'Av. Juscelino Kubitschek', 'Vila Nova Conceição', 'São Paulo', 'SP', '04543001', '20000525', 21, 'F', 90000, 1),
 INSERT INTO clients
 (cpf, name, address, neighborhood, city, state, cep, date_of_birth, age, sex, limit_credit, purchase_volume, first_purchase)
 VALUES 
