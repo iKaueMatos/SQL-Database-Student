@@ -24,8 +24,19 @@ DELIMITER ;
 DELIMITER //
 CREATE PROCEDURE viewJoin (seller_id INT)
 BEGIN
-        SELECT sellers.name,sellers.neightborhood,sales.tax, sales.cpf FROM sellers JOIN sales ON sellers.seller_id = sales.seller_id;
+        SELECT sellers.name,sellers.neightborhood,sales.tax, sales.cpf FROM sellers 
+        JOIN sales ON sellers.seller_id = sales.seller_id;
 END //
 DELIMITER ;
 
 DELIMITER //
+
+
+/*Consult is join sales and sellers for clients*/
+DELIMITER // 
+CREATE PROCEDURE joinViewClientsSellers ( )
+BEGIN 
+    SELECT clients.cpf, clients.address, clients.city, sellers.seller_id, sellers.name  FROM clients 
+    JOIN sellers ON sellers.seller_id = clients.cpf
+END //
+DELIMITER ;
