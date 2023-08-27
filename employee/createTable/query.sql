@@ -69,3 +69,12 @@ CREATE TABLE items_invoices (
     FOREIGN KEY (sale_id) REFERENCES sales(sale_id),
     FOREIGN KEY (product_id) REFERENCES products(product_id)
 );
+
+/*history sales Table*/
+CREATE TABLE history_sales (
+	request_id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+	cpf VARCHAR(11),
+	sale_id INT,
+	FOREIGN KEY (cpf) REFERENCES clients(cpf), 
+	FOREIGN KEY (sale_id) REFERENCES sales(sale_id)
+);

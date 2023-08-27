@@ -26,5 +26,6 @@ CREATE PROCEDURE viewJoin (seller_id INT)
 BEGIN
         SELECT sellers.name,sellers.neightborhood,sales.tax, sales.cpf FROM sellers JOIN sales ON sellers.seller_id = sales.seller_id;
 END //
-
 DELIMITER ;
+
+DELIMITER //
