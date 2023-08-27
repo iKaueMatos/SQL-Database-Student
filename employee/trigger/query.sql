@@ -10,7 +10,7 @@ Ex: ao incluir dados em uma tabela,atualiza um log com data e hora
 
  SELECT * FROM billing;
 
- CREATE TABLE billing (
+CREATE TABLE billing (
     date_of_sale DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL,
     product_code_id INT(11),
     total_sale FLOAT
