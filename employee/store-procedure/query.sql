@@ -40,3 +40,11 @@ BEGIN
     JOIN sellers ON sellers.seller_id = clients.cpf
 END //
 DELIMITER ;
+
+DELIMITER //
+CREATE PROCEDURE acessVariable ()
+BEGIN 
+    DECLARE variable char(12) default 'hello';
+    SELECT variable;
+END //
+DELIMITER;

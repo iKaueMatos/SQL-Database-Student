@@ -29,3 +29,10 @@ FOR EACH ROW BEGIN
     VALUES (NOW(), NEW.product_id, NEW.price * NEW.quantity);
 END //
 DELIMITER ;
+
+DELIMITER //
+CREATE TRIGGER verification_products_trigger BEFORE INSERT ON products
+    FOR EACH ROW
+    BEGIN 
+        IF NEW.price_list <> OLD.price_list THEN
+            INSERT INTO history_sales (product) 
