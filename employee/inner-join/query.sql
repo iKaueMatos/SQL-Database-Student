@@ -23,13 +23,3 @@ SELECT vendas.*, venda.*
 FROM sellers vendas 
 LEFT JOIN sales venda ON vendas.seller_id = venda.seller_id
 WHERE vendas.seller_id = 1 AND (venda.sale_id IS NULL OR venda.sale_id <> 400.033) AND venda.cpf = 12462879024;
-
-use unipstudy;
-
-SELECT aluno.nm_aluno, aluno.ds_endereco_aluno, campus.nm_campus, uf.nm_uf
-FROM aluno
-JOIN campus ON aluno.campus_cd_campus = campus.cd_campus
-LEFT JOIN uf ON campus.uf_cd_uf = uf.cd_uf;
-LEFT JOIN aluno_disciplina ON aluno.cd_aluno = aluno_disciplina.aluno_cd_aluno
-LEFT JOIN disciplina ON aluno_disciplina.disciplina_cd_disciplina = disciplina.cd_disciplina
-WHERE aluno_disciplina.disciplina_cd_disciplina IS NULL;
