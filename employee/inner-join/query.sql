@@ -6,7 +6,6 @@ FROM sellers vendas
 INNER JOIN sales venda ON vendas.seller_id = venda.seller_id
 WHERE vendas.seller_id = 1 AND venda.sale_id <> 400.033 AND cpf = 12462879024;
 
-
 /*inner join filtrando pelo id do usuario*/
 SELECT vendas.*,venda.*
 FROM sellers vendas 

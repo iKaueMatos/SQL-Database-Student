@@ -1,6 +1,5 @@
 //CURSOR o que é ?
 
-USE fruitjuice;
 //Cursor e uma estrutura implementada no mysql que permite uma interatividade linha a 
 //linha atraves de uma determinada ordem.
 
@@ -12,6 +11,7 @@ USE fruitjuice;
 //fecha o CURSOR
 //limpa o cursor da memória
 
+USE fruitjuice;
 DELIMITER //
 CREATE PROCEDURE filter_name()
 BEGIN
